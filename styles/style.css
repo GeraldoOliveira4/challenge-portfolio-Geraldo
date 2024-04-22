@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100.. 700&family=Montserrat:ital,wght@0,100..900; 1.100.900&display=swap');
+
+:root {
+    --cor-primeira:#000000 ;
+    --cor-segunda:#22D4FD ;
+    --cor-terceira:blanchedalmond;
+    --cor-quarta:#F6F6F6 ;
+    --cor-quinta:#5c5c57;
+    --estiloFonte-primaria:"M PLUS 1 Code", monospace;
+    --estiloFonte-secundaria:"Montserrat", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    /* height: 100vh; usado quando está construindo a página. Ao retirar o body pegará a página inteira*/
+    background-color: var(--cor-primeira);
+    color: var(--cor-quarta);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 12%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--estiloFonte-secundaria);
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--cor-segunda);
+    text-decoration: none;
+}
+
+
+h1{
+    font-weight: bold;
+}
+.titulo_destaque{
+    color: var(--cor-segunda);
+}
+
+.apresentacao{
+    padding: 4% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px; 
+}
+.apresentacao__conteudo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo_titulo{
+    font-size: 2.88rem;
+    font-family: var(--estiloFonte-primaria);
+    
+    
+}
+.apresentacao__conteudo_texto{
+    font-size: 1.25rem;
+    font-family: var(--estiloFonte-secundaria);
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+.apresentacao__links_subtitulo{
+   
+    text-align: center;
+    color: var(--cor-quarta);
+    font-family: var(--estiloFonte-secundaria);
+    font-weight: 400;
+
+}
+
+.apresentacao__links_botao{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    text-decoration: none;
+    color: var(--cor-quarta);
+    border-radius: 16px;
+    font-family: var(--estiloFonte-secundaria);
+    font-weight: 400;
+    border: 2px double var(--cor-quarta);
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    padding: 21.5px 0;
+}
+.apresentacao__links_botao:hover{
+    background-color: var(--cor-quinta);
+}
+
+.apresentacao__imagem{
+  width: 50%;
+}
+.rodape{
+    padding: 20px;
+    text-align: center;
+    color: var(--cor-primeira);
+    background-color: var(--cor-segunda);
+    font-family: var(--estiloFonte-secundaria);
+    font-weight: 400;
+    font-size: 20px;
+}
+@media(max-width:690px ){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+}
